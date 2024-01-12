@@ -1,17 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website under development</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <div>
-            <h1>Website under development</h1>
-        </div>
-        <h2>Сайт в розробці</h2>
-    </section>
+  <header>
+    <nav class="menu">
+      <div class="language-section">
+        <a href="#" language="english" class="activelang">🇬🇧</a>
+        <a href="#" language="ukrainian">🇺🇦</a>
+      </div>
+    </nav>
+    <div class="container about-user">
+      <div>
+        <h1 class="title">Hi, I am Mykyta, Junior Front-End Developer</h1>
+        <ul class="info">
+          <li class="location-text"><i class="fa-solid fa-globe" style="color: #000000;"></i>Zviahel, Ukraine</li>
+          <li><i class="fa-solid fa-phone" style="color: #000000;"></i><a href="tel:+380501953170">+380 50 195 3170</a></li>
+          <li><i class="fa-solid fa-envelope icon-text" style="color: #000000;"></i><a href="mailto:nikitaopanassiuk@outlook.com">nikitaopanassiuk@outlook.com</a></li>
+        </ul>
+        <p class="text1">I am a student who wants to connect his life with Front-End or Full-Stack development. Currently, I have no practical experience, but I want to gain it, so EPAM's Front-End Development programme is what I need.</p>
+        <a href="files/CV_Opanasiuk Mykyta.pdf" download><button class="btn download-text">Download CV</button></a>
+      </div>
+      <img src="images/photo.webp" alt="photo">
+    </div>
+  </header>
+
+  <section>
+    <div class="container flex">
+      <h2>Skills</h2>
+        <ul class="skills">
+          <li>Git</li>
+          <li>Linux</li>
+          <li>HTTP</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>UI/UX</li>
+          <li>Responsive design</li>
+          <li>Figma</li>
+          <li>React (learning)</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section-text">
+    <div class="container">
+      <p class="text2">I am currently trying to gain knowledge of React. I also have basic skills in developing web applications on Spring Boot, as Java is the main programming language at the university. It helped me a lot to understand HTML and CSS. I also studied HTML/CSS and JavaScript in a separate discipline, so I have skills in these technologies.</p><br>
+      <p class="text3">In my free time, I am engaged in self-study, completing the Meta Front-End Developer course, and also learning more about Full-Stack development on the Codecademy website.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/mykyta.opanasiuk/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i></a>
+      <a href="https://twitter.com/mykytaopanasiuk" target="_blank"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #000000;"></i></a>
+      <a href="https://www.linkedin.com/in/mykyta-opanasiuk-30b975248/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a>
+      <a href="https://github.com/kazhemyaka" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i></a>
+      <a href="https://t.me/mykytaopanasiuk" target="_blank"><i class="fa-brands fa-telegram fa-2xl" style="color: #000000;"></i></a>
+    </div>
+    <p>Copyright ©2024 All rights reserved </p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/0f685e780c.js" crossorigin="anonymous"></script>
+  <script src="lang.js"></script>
 </body>
 </html>
