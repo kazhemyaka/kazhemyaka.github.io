@@ -131,14 +131,6 @@ header{
         padding-top: 20px;
     }
 
-    .menu a{
-        display: none;
-    }
-
-    .burger{
-        display: block;
-    }
-
     .about-user{
         flex-direction: column;
         align-items: center;
@@ -184,6 +176,12 @@ header{
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    .container{
+        padding: 0 18px;
+    }
+}
+
 /* SECTION POSTS END*/
 
 footer{
@@ -197,7 +195,7 @@ footer p{
 
 .socials{
     /* border: 2px solid #000; */
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
