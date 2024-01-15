@@ -68,15 +68,16 @@ header{
     max-width: 1150px;
     /*border: 1px solid blue;*/
     margin: 0 auto;
-    padding: 5px 45px;
+    padding: 10px 45px;
     margin-bottom: 100px;
 }
 
 .menu a {
-    padding: 15px;
+    padding: 10px;
     font-size: 20px;
     text-decoration: none;
     color: #000;
+    cursor: pointer;
 }
 
 .language-section {
@@ -85,7 +86,7 @@ header{
 
 .activelang {
     background-color: #b3dec1;
-    border-radius: 50%;
+    border-radius: 5px;
 }
 
 .about-user{
