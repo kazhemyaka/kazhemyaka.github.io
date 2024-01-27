@@ -1,5 +1,8 @@
 const langEl = document.querySelector(".language-section"); 
 const link = langEl.querySelectorAll("a");
+const menu1El = document.querySelector('.about-me-link');
+const menu2El = document.querySelector('.skills-link');
+const menu3El = document.querySelector('.contact-link');
 const titleEl = document.querySelector(".title");
 const locationTextEl = document.querySelector(".location-text");
 const text1El = document.querySelector(".text1");
@@ -15,6 +18,9 @@ link.forEach(el => {
 
         const attr = el.getAttribute('language');
 
+        menu1El.textContent = data[attr].menu1;
+        menu2El.textContent = data[attr].skillsText;
+        menu3El.textContent = data[attr].menu3;
         titleEl.textContent = data[attr].title;
         locationTextEl.innerHTML = `<i class="fa-solid fa-globe" style="color: #000000;"></i> ${data[attr].locationText}`;
         text1El.textContent = data[attr].text1;
@@ -27,6 +33,8 @@ link.forEach(el => {
 
 var data = {
     "english": {
+        "menu1": "About Me",
+        "menu3": "Contact",
         "title": "Hi, I am Mykyta, Junior Front-End Developer",
         "locationText": "Zviahel, Ukraine",
         "text1": "I am a student who wants to connect his life with Front-End or Full-Stack development. Currently, I have no practical experience, but I want to gain it, so EPAM's Front-End Development programme is what I need.",
@@ -36,6 +44,8 @@ var data = {
         "text3": "In my free time, I am engaged in self-study, completing the Meta Front-End Developer course, and also learning more about Full-Stack development on the Codecademy website."
     },
     "ukrainian": {
+        "menu1": "Про мене",
+        "menu3": "Контакти",
         "title": "Привіт, мене звати Микита, я Junior Front-End розробник",
         "locationText": "Звягель, Україна",
         "text1": "Я студент, який хоче пов'язати своє життя з Front-End або Full-Stack розробкою. Наразі я не маю практичного досвіду, але хочу його отримати, тому програма Front-End Development від EPAM - це те, що мені потрібно.",
